@@ -9,7 +9,7 @@ const orm = {
 }
 module.exports = orm;
 
-orm.getAll("burgers",burgers=>console.log(burgers));
+// orm.getAll("burgers",burgers=>console.log(burgers));
 
 // [
 // RowDataPacket { id: 1, burger_name: 'DOUBLE-DOUBLE', devoured: 1 },
