@@ -4,7 +4,7 @@ const burger = require("../model/burgers");
 router.get("/", (req, res) => {
     burger.all((burgers) => {
       console.log(burgers);
-const templateData = {burgers:JSON.stringify(burgers,null,2)};
+const templateData = {burgers: burgers}
 res.render("index",templateData)
     });
 });
