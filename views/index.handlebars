@@ -7,7 +7,7 @@
     <ul>
         {{#each burgers}}
         {{#unless devoured}}
-        <li>{{burger_name}}</li>
+        <li class = "mt-2">{{burger_name}}<button data-id ="{{id}}" class= "devoured btn btn-warning btn-sm ml-4 mt-1">DEVOUR IT!</button></li>
         {{/unless}}
         {{/each}}
 
@@ -31,7 +31,7 @@
     <h5>Enter burger you want to devour!</h5>
     <form action="api/burgers" method="POST">
         <div class="input-group mb-3">
-            <input name="burger_name" class="form-control" placeholder="Burger Choice" aria-label="Insert burger name">
+            <input name="burger_name" class="form-control" placeholder="Burger Choice" aria-label="Insert Burger name">
             <div class="input-group-append">
                 <button class="btn btn-outline-danger" type="submit">Button</button>
             </div>
