@@ -3,6 +3,9 @@ const orm = require('../config/orm');
 const burger = {
     all: (callback)=> orm.getAll("burgers", callback),
     create: (burger_name,callback) => orm.createOne("burgers",{ burger_name }, callback),
+    markDevoured:(id,callback)=>{
+        orm.updateById("burgers",{devoured: true},id,callback)
+    }
 };
 
 module.exports = burger;
@@ -26,3 +29,20 @@ module.exports = burger;
 //   protocol41: true,
 //   changedRows: 0
 // }
+
+
+
+
+// burger.markDevoured(3, results =>{
+//     console.log(results)
+// });
+// OkPacket {
+//     fieldCount: 0,
+//     affectedRows: 1,
+//     insertId: 0,
+//     serverStatus: 2,
+//     warningCount: 0,
+//     message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+//     protocol41: true,
+//     changedRows: 1
+//   }

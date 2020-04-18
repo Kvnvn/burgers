@@ -16,10 +16,42 @@ const orm = {
                 throw err;
             }
             callback(data)
+        });
+    },
+    updateById: (table,updatedValues,id,callback)=>{
+        const query = "UPDATE ?? SET ? WHERE ID = ?"
+        connection.query(query,[table,updatedValues,id],(err,data)=>{
+            if (err){
+                throw err;
+            }
+            callback(data)
         })
     }
 }
 module.exports = orm;
+
+// orm.updateById("burgers",{burger_name:"protein burger"}, 3, results => { 
+// console.log(results);
+// })
+
+// OkPacket {
+//     fieldCount: 0,
+//     affectedRows: 1,
+//     insertId: 0,
+//     serverStatus: 2,
+//     warningCount: 0,
+//     message: '(Rows matched: 1  Changed: 0  Warnings: 0',
+//     protocol41: true,
+//     changedRows: 0
+//   }
+
+
+
+
+
+
+
+
 // orm.createOne("burgers", {burger_name: "american burger"}, result =>{
 //     console.log(result);
 
