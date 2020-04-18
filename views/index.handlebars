@@ -27,3 +27,14 @@
         {{/each}}
     </ul>
 </section>
+<section class = "container my-5">
+    <h5>Enter burger you want to devour!</h5>
+    <form action="api/burgers" method="POST">
+        <div class="input-group mb-3">
+            <input name="burger_name" class="form-control" placeholder="Burger Choice" aria-label="Insert burger name">
+            <div class="input-group-append">
+                <button class="btn btn-outline-danger" type="submit">Button</button>
+            </div>
+        </div>
+    </form>
+</section>
