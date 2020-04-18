@@ -14,7 +14,7 @@ router.post("/api/burgers", (req,res)=>{
        res.redirect(303,"/"); 
     })
 })
-router.put("/api/burgers/:id",(req,res)=>{
+router.patch("/api/burgers/:id",(req,res)=>{
     // const newDevoured = req.body.devoured;
     // if (req.body.burger_name !==undefined || !req.body.devoured){
     //     return res.sendStatus(405)
