@@ -8,5 +8,10 @@ const templateData = {burgers: burgers}
 res.render("index",templateData)
     });
 });
-
+router.post("/api/burgers", (req,res)=>{
+    const  newBurgerText = req.body.burger_name;
+    burger.create(newBurgerText,(results)=>{
+       res.redirect(303,"/"); 
+    })
+})
 module.exports = router;
