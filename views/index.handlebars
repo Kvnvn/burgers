@@ -1,50 +1,52 @@
 <div class="row">
-    <div class="col">
-        <header class="container">
-            <h1>EAT-DURR-BURGER!</h1>
-        </header>
-
+    <h1>EAT-DURR-BURGER!</h1>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <div class="container">
+            <h2>EAT IT?</h2>
+            <div class="top-bun">
+                <img src="/images/top-bun.png">
+            </div>
+            <div class="patties">
+                <ul class="list-group">
+                    {{#each burgers}}
+                    {{#unless devoured}}
+                    <p>{{burger_name}}<button data-id="{{id}}"
+                            class="devoured btn btn-warning btn-sm ml-4 mt-1">DEVOUR IT!</button>
+                    </p>
+                    {{/unless}}
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="bottom-bun">
+                <img src="/images/bottom-bun.png">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <h2>
+            FINISHED!
+        </h2>
+         <div class="top-bun">
+                <img src="/images/eaten-burger.png">
+            </div>
+        <div class="patties">
+            <ul class="list-group">
+                {{#each burgers}}
+                {{#if devoured}}
+                <p>{{burger_name}}</p>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="bottom-bun">
+                <img src="/images/eaten-top.png">
+            </div>
     </div>
 </div>
 <div class="row">
     <div class="col">
-
-        <section class="container">
-            <h2>EAT IT?</h2>
-            <ul>
-                {{#each burgers}}
-                {{#unless devoured}}
-                <li class="mt-2">{{burger_name}}<button data-id="{{id}}"
-                        class="devoured btn btn-warning btn-sm ml-4 mt-1">DEVOUR IT!</button></li>
-                {{/unless}}
-                {{/each}}
-
-            </ul>
-        </section>
-    </div>
-    <div class="col">
-
-
-
-
-        <section class="container">
-            <h2>
-                FINISHED!
-            </h2>
-            <ul>
-                {{#each burgers}}
-                {{#if devoured}}
-                <li>{{burger_name}}</li>
-                {{/if}}
-                {{/each}}
-            </ul>
-        </section>
-    </div>
-</div>
-    <div class="row">
-        <div class="col">
-
-
         <section class="container my-5">
             <h5>Enter burger you want to devour!</h5>
             <form action="api/burgers" method="POST">
@@ -57,5 +59,5 @@
                 </div>
             </form>
         </section>
-        </div>
     </div>
+</div>

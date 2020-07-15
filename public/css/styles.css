@@ -1,3 +1,14 @@
 body {
-    background-color:yellow;
+  background-color: navajowhite;
   }
+h1{text-align: center; text-decoration:underline; background-color: navajowhite; margin-left:35rem;}
+
+ h2 {text-align: center; text-decoration:underline; background-color: navajowhite;} 
+
+ul{text-align: center;background-color: navajowhite;}
+
+.mt-2{background-color: navajowhite;}
+
+.my-5{background-color: navajowhite; padding: 1rem;}
+
+img{margin-left: 13rem; width: 18rem;}
