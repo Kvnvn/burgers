@@ -1,9 +1,11 @@
 body {
   background-color: navajowhite;
   }
-h1{text-align: center; text-decoration:underline; background-color: navajowhite; margin-left:35rem;}
+h1{text-align: center; text-decoration:underline; background-color: navajowhite; font-family: 'Ranchers', cursive; color: floralwhite; font-size: 7rem;margin: auto; margin-left: initial; margin-inline-start: auto;background: space; text-shadow: 19px 11px #5a1d00;}
 
- h2 {text-align: center; text-decoration:underline; background-color: navajowhite;} 
+ h2 {text-align: center; text-decoration:underline; background-color: navajowhite;font-family: 'Ranchers', cursive;} 
+
+ h5{font-family: 'Ranchers', cursive;font-size: 5rem;text-align: center;color: #5a1d00; text-shadow: 4px 7px floralwhite;}
 
 ul{text-align: center;background-color: navajowhite;}
 
@@ -12,3 +14,9 @@ ul{text-align: center;background-color: navajowhite;}
 .my-5{background-color: navajowhite; padding: 1rem;}
 
 img{margin-left: 13rem; width: 18rem;}
+
+.jumbotron{background-image:url(https://www.nutscomputergraphics.com/wp-content/uploads/2019/02/Mr-misang-supersize-them.jpg); border-radius: 9.3rem;}
+
+p{margin-left: 14rem; background-color: #5a1d00;padding: 1rem; border-radius: 11rem; width: 16rem; color:antiquewhite}
+
+.btn-outline-success{background-color: #5a1d00;}

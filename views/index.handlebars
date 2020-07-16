@@ -1,5 +1,25 @@
+<div class="jumbotron">
+  <div class="container">
 <div class="row">
     <h1>EAT-DURR-BURGER!</h1>
+</div>
+<div class="row">
+    <div class="col">
+        <section class="container my-5">
+            <h5>Enter burger you want to devour!</h5>
+            <form action="api/burgers" method="POST">
+                <div class="input-group mb-3">
+                    <input name="burger_name" class="form-control" placeholder="enter burger and look below to choose which to eat first!"
+                        aria-label="Insert Burger name">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-success" type="submit">Order Up!</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+  </div>
 </div>
 <div class="row">
     <div class="col-sm-6">
@@ -43,21 +63,5 @@
         <div class="bottom-bun">
                 <img src="/images/eaten-top.png">
             </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col">
-        <section class="container my-5">
-            <h5>Enter burger you want to devour!</h5>
-            <form action="api/burgers" method="POST">
-                <div class="input-group mb-3">
-                    <input name="burger_name" class="form-control" placeholder="Burger Choice"
-                        aria-label="Insert Burger name">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-danger" type="submit">Button</button>
-                    </div>
-                </div>
-            </form>
-        </section>
     </div>
 </div>
